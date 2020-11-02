@@ -36,9 +36,13 @@ header p, header{
 	
 }
 
+
 .form-label, p{
 	display:block;
 	text-align: left;
+}
+.form-label.radio{
+	display: inline;
 }
 .input-text{
 	display:block;
@@ -85,5 +89,6 @@ header p, header{
 
 .radio-group{
 	text-align: left;
+
 
 }

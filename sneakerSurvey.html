@@ -1,0 +1,110 @@
+<!-- - What is your favourite brand of sneakers
+- name
+-email
+-age 
+-gender
+-shoe size 
+-where do you buy your shoes (checkbox)
+ - stockx 
+ - goat
+ - footwear retail(ex footlocker, champs )
+ - directly from the brand(ex nike, addidas)
+ - facebook market place
+ -kijji
+ -ebay
+ -sneaker/ consigment stores
+ do you prefer buying shoe online or in person(drop down list)
+ -online
+ -in-person
+ -both 
+
+ favourite brand of sneakers
+ -nike
+ -air jordans
+ -yeezy
+ -addidas
+ -converse
+ -new balance 
+ - puma
+ -van 
+ reebok
+-designer brand (ex gucci, balenciaga, LV)
+- -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <title>Sneaker Release Subscription</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+        <header>
+            <h1>Sneaker Survey</h1>
+            <p id="description">Thank you for taking the time to complete this survey.</p>
+        </header>
+        <form id="survey-form">
+            <!-- might need to add value attribute for input -->
+            <div class="input-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" class="input-text"required>
+            </div>
+            <div class="input-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter you Email" class="input-text" required>
+            </div>
+            <div class="input-group">
+                <label for="age" class="form-label">Age</label>
+                <input type="text" name="age" id="age" placeholder="Age" class="input-text" required>
+            </div>
+            <div class="input-group">
+                <p>Select your Gender</p>
+                <label class="form-label"><input type="radio" name="gender" id="male" checked required class="intput-radio">Male</label>
+               
+                <label class="form-label"><input type="radio" name="gender" id="female" required class="intput-radio">Female</label>
+                
+                <label class="form-label"><input type="radio" name="gender" id="other" required class="intput-radio">Other</label>
+                
+            </div>
+            
+            <div id="btn-container">
+              <p>Select a shoe size</p>  
+                <ul class="btn-group">
+                    <input type="button" name="shoe-size" value="US M 3.5 / W 5">
+                    <input type="button" name="shoe-size" value="US M 4 / W 5.5">
+                    <input type="button" name="shoe-size" value="US M 4.5 / W 6">
+                    <input type="button" name="shoe-size" value="US M 5 / W 6.5">
+                    <input type="button" name="shoe-size" value="US M 5.5 / W 7">
+                    <input type="button" name="shoe-size" value="US M 6 / W 7.5">
+                    <input type="button" name="shoe-size" value="US M 6.5 /W 8">
+                    <input type="button" name="shoe-size" value="US M 7 / W 8.5">
+                    <input type="button" name="shoe-size" value="US M 7.5 / W 9">
+                    <input type="button" name="shoe-size" value="US M 8 / W 9.5">
+                    <input type="button" name="shoe-size" value="US M 8.5 / W 10">
+                    <input type="button" name="shoe-size" value="US M 9 / W 10.5">
+                    <input type="button" name="shoe-size" value="US M 9.5 / W 11">
+                    <input type="button" name="shoe-size" value="US M 10 / W 11.5">
+                    <input type="button" name="shoe-size" value="US M 10.5 / W 12">
+                    <input type="button" name="shoe-size" value="US M 11 / W 12.5">
+                    <input type="button" name="shoe-size" value="US M 11.5 / W 13">
+                    <input type="button" name="shoe-size" value="US M 12 / W 13.5">
+                    <input type="button" name="shoe-size" value="US M 12.5 / W 14">
+                    <input type="button" name="shoe-size" value="US M 13 / W 14.5">
+                    <input type="button" name="shoe-size" value="US M 13.5 / W 15">
+                    <input type="button" name="shoe-size" value="US M 14 / W 15.5">
+                    <input type="button" name="shoe-size" value="US M 14.5 / W 16">
+                    <input type="button" name="shoe-size" value="US M 15 / W 16.5">
+
+                </ul>
+            </div>
+
+
+        </form>
+    </div>
+  </main>
+</body>
+
+</html>

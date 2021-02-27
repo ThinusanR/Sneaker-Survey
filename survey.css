@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(150deg, rgba(12, 0, 235, 0.5), rgba(143, 143, 234, 0.78)), url("https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+    background-image: linear-gradient( rgba(12, 0, 235, 0.3), rgba(12, 0, 235, 0.3)), url("https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -40,16 +40,20 @@ header {text-align: center;
 
 
 .form-label,
-p {
+p{
     display: block;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .form-label.radio {
     display: inline;
 }
+.input-checkbox{
+	display:block;
+}
 
-.input-text {
+.input-text, .input-dropdown, #submit-btn {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -59,6 +63,11 @@ p {
     padding: 0.5rem;
     margin: 0.3rem 0 auto auto;
 
+}
+#input-textarea{
+	width:100%;
+	min-height:100px;
+	resize:vertical;
 }
 
 .container {
@@ -80,6 +89,7 @@ p {
     .container {
         max-width: 720px;
     }
+    
 }
 
 #survey-form {
@@ -88,13 +98,38 @@ p {
     border-radius: 0.5rem;
 }
 
-#btn-container {
-    width: 40%;
-    margin: 0 auto;
+#btn-group{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:100%;
 }
+
 
 .radio-group {
     text-align: left;
 
 
+}
+.input-btn{
+	padding: 0.5rem 1rem;
+	border-radius: 0.2rem;
+	border:none;
+	margin: 0.2rem 0.2rem;
+	cursor:pointer;
+	background-color:transparent; 
+	color: white;
+	border: 0.5px solid white;
+}
+.input-btn:hover,.input-btn:focus{
+	color: #ff5b00;
+	box-shadow: 0 0.5em 0.5em -0.4em #ff5b00;
+	border-color: #ff5b00;
+}
+
+
+#submit-btn{
+	color:white;
+	background-color:green;
+	border-radius: 	1rem;
 }
